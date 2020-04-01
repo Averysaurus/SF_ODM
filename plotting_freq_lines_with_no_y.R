@@ -1,33 +1,33 @@
-###Consultation Vignette### R-studio, ggplot2, geom_line()
-##2020-03-30## avery.richards@berkeley.edu
+### Consultation Vignette ### R-studio, ggplot2, geom_line()
+## 2020-03-30 ## avery.richards@berkeley.edu
 
 # Documented here are the results for solving: 
 # - "How to plot a line geom when we only have a frequency count of (x) ?" - 
 # Answer:it was done by creating a "table" object from a vector of dates,
-#and plotting a 'y=' as the frequency count of unique dates in the table.  
+# and plotting a 'y=' as the frequency count of unique dates in the table.  
 
-#Note: answering this question is part of larger project, seems like 
-#oversharing is better than under. SEE LINES 65:92 for solution. 
+# Note: answering this question is part of larger project, seems like 
+# oversharing is better than under. SEE LINES 65:92 for solution. 
 
-#relevant packages used.
+# relevant packages used.
 library(ggplot2)
 library(dplyr)
 
-#bringing in the dataset. These are crowdsourced community 
-#and public health reports from mobile devices. 
-#nrow here is around 4 * 10^6 and ncol = 23.
+# Bringing in the dataset. These are crowdsourced community 
+# and public health reports from mobile devices. 
+# nrow here is around 4 * 10^6 and ncol = 23.
 sanfran_calls <- read.csv("311_calls.mid_march2020.csv", stringsAsFactors = FALSE)
 
 ###--- The next few lines are subsetting from the larger dataset above. ---###
 
-#use of grep function to locate certain "waste" related reports. 
+# Use of grep function to locate certain "waste" related reports. 
 waste_calls <- sanfran_calls[grep("Waste", sanfran_calls$service_subtype), ]
 
-#filtering out medical waste calls (IV needles and other waste like that). 
+# Filtering out medical waste calls (IV needles and other waste like that). 
 not_medical_waste <- waste_calls[waste_calls$service_subtype != "Medical Waste", ]
 
-#date range of, this dataset goes back to 2008. 
-#The ask in this situation was for 2016 - 2020.
+# Specific date ranges: this dataset goes back to 2008. 
+# The ask in this situation was for 2016 - 2020.
 recent_waste_calls <- subset(not_medical_waste, 
                              as.data.frame.Date(requested_datetime) >= "2016-01-01" & 
                                as.data.frame.Date(requested_datetime)< "2020-01-01")
@@ -35,10 +35,10 @@ recent_waste_calls <- subset(not_medical_waste,
 
 
 # Note: these lines apply to the R-geospatial component of this project 
-#(need clean coordinates within a range or the map breaks.) 
+# (need clean coordinates within a range or the map breaks.) 
 sanfran_range_recent_calls <- subset(recent_waste_calls[recent_waste_calls$lat > 37, ])
 
-#filtering out NA values in lat/lon columns with dplyr. 
+# filtering out NA values in lat/lon columns with dplyr. 
 sanfran_calls_no_na = filter(sanfran_range_recent_calls, lat != "NA")
 
 
