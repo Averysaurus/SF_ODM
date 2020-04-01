@@ -3,7 +3,7 @@
 
 # Documented here are the results for solving: 
 # - "How to plot a line geom when we only have a frequency count of (x) ?" - 
-#it was done by creating a "table" object from a vector of dates,
+# Answer:it was done by creating a "table" object from a vector of dates,
 #and plotting a 'y=' as the frequency count of unique dates in the table.  
 
 #Note: answering this question is part of larger project, seems like 
