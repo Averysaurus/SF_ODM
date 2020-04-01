@@ -1,4 +1,4 @@
-### Consultation Vignette ### R-studio, ggplot2, geom_line()
+### Consultation Vignette ### R-studio, ggplot2, geom_line(), geom_smooth()
 ## 2020-03-30 ## avery.richards@berkeley.edu
 
 # Documented here are the results for solving: 
