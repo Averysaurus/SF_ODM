@@ -60,7 +60,7 @@ sanfran_clean_no_na_2 <- sanfran_clean_no_na_1[grep("Duplicate", sanfran_clean_n
 # Calls with "nothing" in response narrative,
 # reflecting false alarm or duplicate frequency counts.
 sanfran_clean_calls <- sanfran_clean_no_na_2[grep("nothing", sanfran_clean_no_na_2$status_notes, invert = TRUE), ]
-### --- 
+
 
 # Okay, now these lines use a gsub() function to make a new vector 
 # in the dataframe with a cleaned up and ggplot2 recognizable 
@@ -75,7 +75,7 @@ sanfran_clean_calls$date_only <- gsub('[[:upper:]][0-9][^z][[:punct:]][0-9][^z][
 sanfran_map_these = sanfran_clean_calls %>% distinct(address, .keep_all = TRUE)
 
 # Notice the date_only vector is just that, a single column 
-# of dates reflecting each time a user reported human or animal waste
+# of dates reflecting each incidence where a user reported human or animal waste
 # to San Francisco's 311 system between 2016 - 2020 (nrow is about 3.03 * 10^4).
 
 # Building a table out of our new "date_only" vector. 
