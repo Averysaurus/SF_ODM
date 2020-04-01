@@ -6,7 +6,7 @@
 # Answer:it was done by creating a "table" object from a vector of dates,
 # and plotting a 'y=' as the frequency count of unique dates in the table.  
 
-# Note: answering this question is part of larger project, seems like 
+# Note: answering this question is part of a larger project, seems like 
 # oversharing is better than under. SEE LINES 65:92 for solution. 
 
 # relevant packages used.
