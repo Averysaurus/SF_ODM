@@ -74,7 +74,7 @@ sanfran_clean_calls$date_only <- gsub('[[:upper:]][0-9][^z][[:punct:]][0-9][^z][
 # where 2+ people see something and report it at the same time).
 sanfran_map_these = sanfran_clean_calls %>% distinct(address, .keep_all = TRUE)
 
-# Notice the date_only vector is just that, a single column 
+# Notice the "date_only" vector on line 69 is just that: a single column 
 # of dates reflecting each incidence where a user reported human or animal waste
 # to San Francisco's 311 system between 2016 - 2020 (nrow is about 3.03 * 10^4).
 
