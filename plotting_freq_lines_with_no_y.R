@@ -42,10 +42,10 @@ sanfran_range_recent_calls <- subset(recent_waste_calls[recent_waste_calls$lat >
 sanfran_calls_no_na = filter(sanfran_range_recent_calls, lat != "NA")
 
 
-### --- The next few lines are methods to control for confounding in the data.
+### The next few lines are methods to control for confounding in the data.
 #Mostly duplicates of where a Public Health Worker
 #shows up and nothing is there to fix. This is some noisy data, folks! 
-#Bear with me.. --- ###
+#Bear with me. ###
 
 
 #filter out "duplicate calls" Note: many duplicates documented through 
