@@ -66,7 +66,8 @@ sanfran_clean_calls <- sanfran_clean_no_na_2[grep("nothing", sanfran_clean_no_na
 #in the dataframe with a cleaned up and ggplot2 recognizable 
 #"date" format: YYYY-MM-DD without timestamp. 
 #That colossal argument in the parantheses is R-regex code.
-sanfran_clean_calls$date_only <- gsub('[[:upper:]][0-9][^z][[:punct:]][0-9][^z][[:punct:]][0-9][^z][[:upper:]]', '', sanfran_clean_calls$requested_datetime)
+sanfran_clean_calls$date_only <- gsub('[[:upper:]][0-9][^z][[:punct:]][0-9][^z][[:punct:]][0-9][^z][[:upper:]]', '', 
+                                      sanfran_clean_calls$requested_datetime)
 
 #And finally, a dplyr function to clear out duplicates
 #based on address, (those one incidence, multiple reports situations 
