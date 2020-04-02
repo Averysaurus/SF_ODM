@@ -1,9 +1,9 @@
-### Consultation Vignette : DCPS & D-Lab ### R-studio, ggplot2, geom_line(), geom_smooth()
+### Consultation Vignette : DPCS & D-Lab ### R-studio, ggplot2, geom_line(), geom_smooth()
 ## 2020-03-30 ## avery.richards@berkeley.edu
 
 # Documented here are the results for solving: 
-# - "How to plot a line geom when we only have a frequency count of (x) ?" - 
-# Answer:it was done by creating a "table" object from a vector of dates,
+# - "How to plot a line geom with ggplot() when we only have a frequency count of (x) ?" - 
+# Answer: it was done by creating a "table" object from a vector of dates,
 # and plotting a 'y=' as the frequency count of unique dates in the table.  
 
 # Note: answering this question is part of a larger project, seems like 
