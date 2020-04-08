@@ -218,8 +218,11 @@ ggplot(map_home_camps_month, aes(dates, fill = status)) +
 # Many Cities in the Bay Area have open-data portals with crowdsourced geospatial coordinates. 
 # As in life, there is heterogenity in how these systems operate:
 # Data is organized uniquely, systems overlap, levels of transperancy are different. 
-# One thing to note is the wide variance of data quality: it's a really noisy place!
-# We are looking through the eyes of the crowd, 
-# and I feel like it's important we question what we see there.
+# One thing to note is the wide variance of data quality.
+# We are looking through the eyes of the crowd, and crowds are noisy places to be!
+# I feel like open date portals are awesome resources, 
+# but it's important we question what we see there.
 
-# ~FIN
+# Thanks for your time and attention! 
+
+# FIN
