@@ -118,7 +118,7 @@ tmap_mode("view")
 # Let's zoom out on the time scale a little:
 oak_calls_week <- subset(oak_calls, 
                          as.data.frame.Date(datetimeinit) >= "2020-03-15" & 
-                           as.data.frame.Date(datetimeinit)< "2020-03-22")
+                           as.data.frame.Date(datetimeinit)< "2020-03-23")
 
 # Subsetting..
 home_camps_week <- oak_calls_week[oak_calls_week$description == "Homeless Encampment",]
@@ -149,7 +149,7 @@ qtm(map_home_camps_week) +
 # Let's look at the month of March. 
 oak_calls_month <- subset(oak_calls, 
                           as.data.frame.Date(datetimeinit) >= "2020-03-01" & 
-                            as.data.frame.Date(datetimeinit)< "2020-04-01")
+                            as.data.frame.Date(datetimeinit)< "2020-04-02")
 
 # Subsetting, and grepping out the CANCELs.
 home_camps_month <- oak_calls_month[oak_calls_month$description == "Homeless Encampment",]
