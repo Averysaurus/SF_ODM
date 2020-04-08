@@ -77,11 +77,11 @@ uni_home_camps = home_camps_today %>% distinct(reqaddress.latitude, .keep_all = 
 View(uni_home_camps)
 ## Notice how one of the rows has "CANCEL" under the status column? 
 
-## So this is a report someone made to the City that could not be verified.
+## This is a report someone made to the City that could not be verified.
 ## A pretty common occurance, you'll see.
 ## Discovering what systematic language is
 ## used to express false alarms, cancelled calls, and duplicates 
-## in 311 dataframes is helpful because we can incorporate that languge 
+## in 311 data sources is helpful because we can incorporate that languge 
 ## into our analysis to control for confounding.
 
 ## grep functions are good at this.
