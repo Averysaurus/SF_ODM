@@ -222,3 +222,4 @@ ggplot(map_home_camps_month, aes(dates, fill = status)) +
 # We are looking through the eyes of the crowd, 
 # and I feel like it's important we question what we see there.
 
+# ~FIN
