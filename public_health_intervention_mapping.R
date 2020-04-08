@@ -47,12 +47,7 @@ View(unique(oak_calls$reqcategory))
 # Descriptions are more specific: there are hundreds of "description" variables here.
 View(unique(oak_calls$description))
 
-
-# Okay, so we are a medical non-profit that has a mobile clinic to help
-# homeless communities access services. 
-
-
-# We can subset this big dataframe via a date ranges: let's start with one day slice.
+# We can subset this big dataframe via a date ranges: let's start with a "one day" slice.
 oak_calls_day <- subset(oak_calls, 
                         as.data.frame.Date(datetimeinit) >= "2020-04-03" & 
                           as.data.frame.Date(datetimeinit)< "2020-04-04")
@@ -60,6 +55,10 @@ oak_calls_day <- subset(oak_calls,
 
 dim(oak_calls_day)
 # Seems more human freindly now, yeah?
+
+
+## Okay, so say we are a medical non-profit that has a mobile clinic to help
+## homeless communities access services. 
 
 # If we scroll around here for a minute, we notice a "Homeless Encampment" descriptor. 
 View(unique(oak_calls_day$description))
