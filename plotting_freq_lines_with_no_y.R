@@ -91,3 +91,5 @@ ggplot(y_dates, aes(x= Var1, y = Freq, group = 1))+
   geom_smooth(method = 'lm', color = 'red', size = .5, alpha = .75) +
   ggtitle("311: Human or Animal Waste calls, San Francisco.") +
   ylab("Frequency of Calls")
+
+# ~FIN
