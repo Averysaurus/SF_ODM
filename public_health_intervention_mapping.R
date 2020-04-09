@@ -113,7 +113,7 @@ qtm(map_home_camps) +
 tmap_mode("view")
 
 ### So that's a start, we have some points to work with. 
-### We could dispatch a case worker to outreach there if we had the resouces to. ###
+### We could dispatch a case worker to outreach there if we had the resources to. ###
 
 # Let's zoom out on the time scale a little:
 oak_calls_week <- subset(oak_calls, 
@@ -218,9 +218,9 @@ ggplot(map_home_camps_month, aes(dates, fill = status)) +
 # As in life, there is heterogenity in how these systems operate:
 # Data is organized uniquely, systems overlap, levels of transperancy are different. 
 # One thing to note is the wide variance of data quality.
-# We are looking through the eyes of the crowd, and crowds are noisy places to be!
-# I feel like open date portals are awesome resources, 
-# but it's important we question what we see there with scrutiny.
+# We are listening to the voice of the crowd here, and crowds are noisy places to be listening!
+# I feel like open data portals are awesome resources, 
+# it is important we question what we see through them with scrutiny.
 
 # Thanks for your time and attention! 
 
