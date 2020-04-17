@@ -11,6 +11,14 @@
 # This tool uses of R-studio geospatial packages to plot
 # crowd-sourced reports of Homeless Encampments in Oakland, Ca.
 
+# Packages for libraries.
+install.packages("Rsocrata")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("tmap")
+install.packages("sf")
+
+
 # relevant libaries for this walkthrough
 library(RSocrata)
 library(ggplot2)
