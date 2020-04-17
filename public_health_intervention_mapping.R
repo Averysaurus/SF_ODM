@@ -33,8 +33,8 @@ oak_calls <- read.socrata("https://data.oaklandnet.com/resource/quth-gb8e.json",
                           stringsAsFactors = FALSE)
 
 # A good next step would be to save as a csv on your local drive.
-setwd("_YOUR FILEPATH HERE_")
-write.csv(oak_calls, "311_calls.oakland.csv")
+# setwd("_YOUR FILEPATH HERE_")
+# write.csv(oak_calls, "311_calls.oakland.csv")
 
 
 # Let's look at the number of rows we have here: 
