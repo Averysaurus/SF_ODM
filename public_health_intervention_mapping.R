@@ -194,10 +194,12 @@ map_home_camps_month <- st_as_sf(clean_home_camps_month, coords =
 
 tmap_mode("view")
 
-# quick tmap.
-qtm(map_home_camps_month) +
-  tm_dots()
-# Wow that's a lot of dots! 
+#tmap for viewing status of calls.
+map_home_camps_month$status <- as.factor(map_home_camps_month$status)
+tm_basemap()+ 
+tm_shape(map_home_camps_month) +
+tm_dots(col = 'status', palette = "-plasma")
+# Wow that's a lot of dots! Look for patterns around ambigious status categories.
 
 # Maybe we want to step back a do a quick visualization of these.
 # Let's make a quick histogram:
