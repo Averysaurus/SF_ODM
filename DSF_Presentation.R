@@ -10,7 +10,8 @@ library(dplyr)
 library(tmap)
 library(sf)
 
-#Here is the "Rsocrata" function that brings in the 311 data:
+# Here is the "Rsocrata" function that brings in the 311 data:
+# Could take a while to load the API, so chill when running these lines.
 oak_calls <- 
 read.socrata("https://data.oaklandnet.com/resource/quth-gb8e.json", 
                          stringsAsFactors = FALSE)
