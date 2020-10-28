@@ -45,8 +45,8 @@ sanfran_range_recent_calls <-
   subset(recent_waste_calls[recent_waste_calls$point.latitude > 37, ])
 
 ### NOTE FROM PAST SELF: apologies for this long list of repetious grep calls. :o
-### Today I am wiser and stronger and should have written a function to handle 
-### all these. Next time I will, promise... ~Avery
+### In the future, you must learn to write functions to handle 
+### all these... ~Avery
 
 # Remove missclassified  reports from agency_responsible column. 
 agency_1 <- sanfran_range_recent_calls[grep('Animal Care and Control - G',
